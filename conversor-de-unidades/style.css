@@ -1,0 +1,186 @@
+body{
+
+    margin: 10px;
+    background-color: black;
+   
+    
+
+}
+
+#home{
+
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-bottom: 2cm;
+    padding-top: 2cm;
+    background-color: #483355;
+
+}
+
+header{
+
+    font-size: 30px;
+    color:  rgb(240, 234, 245);
+    float: left;
+    padding-left: 2cm;
+
+}
+
+.topdiv{
+    float: right;
+    padding-left: 1cm;
+}
+
+.topmenu{
+    color: lightgray;
+    background-color:  #483355;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1mm;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.topmenu:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    background-color:  #382742;
+    text-decoration: underline;
+}
+
+
+#all-conversion-sections{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+figure{
+    float: left;
+    justify-self: auto;
+    width: 200px;
+    height: 100%;
+    align-items: center;
+    
+
+}
+
+img{
+    width: 200px;
+}
+
+figcaption{
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+.convert-button{
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    width: fit-content;
+    background-color: rgb(173, 218, 173);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+
+}
+
+
+
+
+.convert-button:hover{
+    cursor: pointer;
+}
+
+.b{
+    border-top-style: solid;
+    border-top-width: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    padding: 1cm;
+    justify-content: center;
+
+    
+}
+
+
+.temperature{
+    border-top-color: green;
+}
+
+.weight{
+    border-top-color: coral;
+}
+
+.distance{
+    border-top-color:  cyan;
+}
+
+legend{
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+article{
+
+    display: flex;
+    align-items: center;
+    margin-top: 2cm;
+    justify-content: center;
+    
+}
+
+fieldset{
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+container-calc{
+    display: flex;
+   
+}
+
+
+aside{
+    padding: 1cm;
+   
+}
+
+.iconbutton{
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(225, 235, 235);
+    border-radius: 100%;
+    display: flex;
+    position:fixed;
+    bottom: 40px;
+    left: 0;
+
+
+
+}
+
+
+.iconbutton ung{
+    width: 30px;
+}
+
+footer{
+    background-color: lightpink;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}

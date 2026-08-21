@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Conversões de Unidades</title>
+  </head>
+  <body>
+    <section id="home">
+      <header><b>Conversões de Unidades</b></header>
+
+      <nav class="topdiv">
+        <!--Aqui contém os botões de conversão do site-->
+
+        <a href="#temperature"><button class="topmenu">Temperatura</button></a>
+        <a href="#weight"><button class="topmenu">Peso</button></a>
+        <a href="#distance"><button class="topmenu">Distância</button></a>
+      </nav>
+    </section>
+
+    <div id="all-conversion-sections">
+      <!--Container com todas as seções de conversão-->
+
+      <section id="temperature" class="b temperature">
+        <!--Zona de Conversão de Temperatura-->
+
+        <div id="tmp" class="container-calc">
+          <!--Figura Representando Temperatura-->
+          <figure>
+            <img
+              src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png"
+              alt="Termômetro"
+              width="200px"
+            />
+
+            <figcaption>Conversão de Celsius para Fahrenheit</figcaption>
+          </figure>
+
+          <article>
+            <!--Contém Elementos específicos para a conversão de temperatura-->
+
+            <fieldset>
+              <legend>Temperatura</legend>
+
+              <!--Contém os campos e o botão para conversão de temperatura-->
+
+              <!--Rótulo para entrada da temperatura-->
+              <label for="celsius">Celsius</label> <br />
+
+              <input type="number" name="celsius" id="celsius" /> <br />
+
+              <!--Botão de conversão-->
+
+              <button id="temperature" class="convert-button">Converter</button
+              ><br />
+
+              <!--Rótulo para saida da temperatura-->
+              <input type="number" name="fahrenheit" id="fahrenheit" /> <br />
+
+              <label for="fahrenheit">Fahrenheit</label>
+            </fieldset>
+          </article>
+
+          <aside>
+            Para converter Celsius em Fahrenheit você mesmo, use esta fórmula
+            substituindo o `C` pela sua temperatura em Celsius: (C × 9/5) + 32
+          </aside>
+        </div>
+      </section>
+      <div style="clear: both"></div>
+
+      <section id="weight" class="b weight">
+        <div id="wgt" class="container-calc">
+          <figure>
+            <img
+              src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png"
+              alt="Kilos"
+              width="200px"
+            />
+            <figcaption>Conversão de quilograma em libra</figcaption>
+          </figure>
+
+          <article>
+            <fieldset>
+              <legend>Peso</legend>
+
+              <label for="kilo" id="weight">Quilogramas</label> <br />
+
+              <input type="number" id="kilo" /> <br />
+
+              <button id="weight" class="convert-button">Converter</button>
+              <br />
+
+              <input type="number" id="pound" /> <br />
+
+              <label for="pound">Libras</label>
+            </fieldset>
+          </article>
+
+          <aside>
+            Para converter quilogramas em libras, use esta fórmula substituindo
+            `kg` pelo seu peso em quilogramas: kg x 2,205
+          </aside>
+        </div>
+      </section>
+      <div style="clear: both"></div>
+
+      <section id="distance" class="b distance">
+        <div id="dst" class="container-calc">
+          <figure>
+            <img
+              src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png"
+              alt="Velocidade"
+              width="200px"
+            />
+
+            <figcaption>Conversão de quilômetro em milha</figcaption>
+          </figure>
+
+          <article>
+            <fieldset>
+              <legend>Distância</legend>
+
+              <label for="km">Kilômetros</label> <br />
+
+              <input type="number" id="km" /><br />
+
+              <button id="distance" class="convert-button">Converter</button
+              ><br />
+
+              <input type="number" id="miles" /><br />
+              <label for="miles">Milhas</label>
+            </fieldset>
+          </article>
+
+          <aside>
+            Para converter quilômetros em milhas, use esta fórmula substituindo
+            `km` pela sua distância em quilômetros: km &divide; 1.609
+          </aside>
+        </div>
+        <div style="clear: both"></div>
+      </section>
+    </div>
+
+    <div id="go-home" class="iconbutton">
+      <a href="#home">
+        <img
+          src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"
+        />
+      </a>
+    </div>
+
+    <footer>
+      Saiba mais sobre HTML como parte da certificação IBM Fullstack Cloud
+      Developer
+    </footer>
+  </body>
+</html>
