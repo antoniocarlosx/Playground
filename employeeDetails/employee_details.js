@@ -39,7 +39,17 @@ function displayEmployees() {
       (employee) =>
         `<p>${employee.id}: ${employee.name} - ${employee.department} - ${employee.salary}</p>`,
     )
-    .join('');
+    .join("");
 
-    document.getElementById('employeesDetails').innerHTML = totalEmployees
+  document.getElementById("employeesDetails").innerHTML = totalEmployees;
+}
+
+// Função para Calcular o total dos salários
+function calculateTotalSalaries() {
+  const totalSalaries = employees.reduce(
+    (acc, employee) => acc + employee.salary,
+    0,
+  );
+
+  alert(`Total Salaries: $${totalSalaries}`);
 }
