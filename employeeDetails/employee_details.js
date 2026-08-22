@@ -73,7 +73,31 @@ function displayRHemployees() {
     )
     .join("");
 
-    document.getElementById('employeesDetails').innerHTML = hrEmployeesDisplay;
+  document.getElementById("employeesDetails").innerHTML = hrEmployeesDisplay;
 }
 
+// Função para encontrar funcionário através da ID
 
+/* 
+1. Recebe o valor que foi digitado no campo de busca da pagina.
+2. Com o ParseInt convertemos o valor que é uma string para int
+3. Aplicamos o Find para iterar sobre toda a array em busca desse valor convertido
+4. Se encontrar renderiza no HTML, se não encontrar avisa que não foi encontrado.
+*/
+
+function findEmployeeById() {
+
+  const inputVal = document.getElementById('find-id').value;
+  const employeeId = parseInt(inputVal);
+  const foundEmployee = employees.find(
+    (employee) => employee.id === employeeId,
+  );
+
+  if (foundEmployee) {
+    document.getElementById("employeesDetails").innerHTML =
+      `<p>${foundEmployee.id}: ${foundEmployee.name}: ${foundEmployee.name} - ${foundEmployee.department} - $${foundEmployee.salary}</p>`;
+  } else {
+    document.getElementById("employeesDetails").innerHTML =
+      "Nenhum funcionário foi encontrado com este ID";
+  }
+}

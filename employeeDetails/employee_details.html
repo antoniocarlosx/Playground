@@ -10,15 +10,17 @@
 
     <div>
       <button onclick="displayEmployees()">Exibir Funcionários</button>
-      <button onclick="calculateTotalSalaries">
+      <button onclick="calculateTotalSalaries()">
         Calcular Salários Totais
       </button>
-      <button onclick="displayRHemployees">
-        Exibir Funcionários de RH
-      </button>
-      <button onclick="findEmployeeById">
-        Encontrar Funcionário pelo ID
-      </button>
+      <button onclick="displayRHemployees()">Exibir Funcionários de RH</button>
+
+      <div>
+        <input type="number" name="find-id" id="find-id" placeholder="Digite o ID para Encontrar">
+        <button onclick="findEmployeeById()">
+          Encontrar Funcionário pelo ID
+        </button>
+      </div>
     </div>
     <div id="employeesDetails"></div>
     <script src="employee_details.js"></script>
