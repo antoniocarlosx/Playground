@@ -1,31 +1,83 @@
 const employees = [
-  { id: 1, name: "John Doe", age: 30, department: "IT", salary: 50000 },
-  { id: 2, name: "Alice Smith", age: 28, department: "HR", salary: 45000 },
-  { id: 3, name: "Bob Johnson", age: 35, department: "Finance", salary: 60000 },
-  { id: 4, name: "Emily Davis", age: 31, department: "HR", salary: 48000 },
+  {
+    id: 1,
+    name: "John Doe",
+    age: 30,
+    department: "IT",
+    salary: 50000,
+    specialization: "JavaScript",
+  },
+  {
+    id: 2,
+    name: "Alice Smith",
+    age: 28,
+    department: "HR",
+    salary: 45000,
+    specialization: "Python",
+  },
+  {
+    id: 3,
+    name: "Bob Johnson",
+    age: 35,
+    department: "Finance",
+    salary: 60000,
+    specialization: "Java",
+  },
+  {
+    id: 4,
+    name: "Emily Davis",
+    age: 31,
+    department: "HR",
+    salary: 48000,
+    specialization: "Python",
+  },
   {
     id: 5,
     name: "Michael Brown",
     age: 45,
     department: "Operations",
     salary: 68000,
+    specialization: "Python",
   },
-  { id: 6, name: "Sarah Wilson", age: 26, department: "Sales", salary: 45000 },
-  { id: 7, name: "James Taylor", age: 38, department: "Legal", salary: 85000 },
+  {
+    id: 6,
+    name: "Sarah Wilson",
+    age: 26,
+    department: "Sales",
+    salary: 45000,
+    specialization: "SalesForce",
+  },
+  {
+    id: 7,
+    name: "James Taylor",
+    age: 38,
+    department: "Legal",
+    salary: 85000,
+    specialization: "JavaScript",
+  },
   {
     id: 8,
     name: "Jessica Anderson",
     age: 33,
     department: "Finance",
     salary: 62000,
+    specialization: "JavaScript",
   },
-  { id: 9, name: "John Thomas", age: 50, department: "IT", salary: 90000 },
+  {
+    id: 9,
+    name: "John Thomas",
+    age: 50,
+    department: "IT",
+    salary: 90000,
+    specialization: "Python",
+  },
   {
     id: 10,
     name: "Amanda Garcia",
     age: 29,
     department: "Marketing",
     salary: 54000,
+    specialization: "JavaScript",
   },
 ];
 
@@ -86,8 +138,7 @@ function displayRHemployees() {
 */
 
 function findEmployeeById() {
-
-  const inputVal = document.getElementById('find-id').value;
+  const inputVal = document.getElementById("find-id").value;
   const employeeId = parseInt(inputVal);
   const foundEmployee = employees.find(
     (employee) => employee.id === employeeId,
@@ -100,4 +151,27 @@ function findEmployeeById() {
     document.getElementById("employeesDetails").innerHTML =
       "Nenhum funcionário foi encontrado com este ID";
   }
+}
+
+
+// Função para encontrar funcionário com especialização em JavaScript
+
+/*
+1. Usando o filter iteramos sobre toda a array em busca de funcionários com a especialização em JavaScript
+2. Com esses funcionários encontrados, criamos um novo array de strings com o map
+3. Renderizamos esse template com os dados preenchidos na pagina
+*/
+function findEmployeeByJSSpecialization() {
+  const JSEmployees = employees.filter(
+    (employee) => employee.specialization === 'JavaScript',
+  );
+
+  const JSEmployeesDisplay = JSEmployees
+    .map(
+      (employee, index) =>
+        `<p>${employee.id}: ${employee.name} - ${employee.department} - ${employee.salary}</p>`,
+    )
+    .join("");
+
+  document.getElementById("employeesDetails").innerHTML = JSEmployeesDisplay;
 }
