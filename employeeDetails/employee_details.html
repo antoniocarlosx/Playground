@@ -1,11 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes dos Funcionários</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Gestão de Funcionários</title>
+  </head>
+  <body>
+    <h1>Sistema de Gestão de Funcionários</h1>
+
+    <div>
+      <button onclick="displayEmployees()">Exibir Funcionários</button>
+      <button onclick="calculateTotalSalaries">
+        Calcular Salários Totais
+      </button>
+      <button onclick="displayRHemployees">
+        Exibir Funcionários de RH
+      </button>
+      <button onclick="findEmployeeById">
+        Encontrar Funcionário pelo ID
+      </button>
+    </div>
+    <div id="employeesDetails"></div>
+    <script src="employee_details.js"></script>
+  </body>
 </html>
