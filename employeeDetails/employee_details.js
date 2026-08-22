@@ -45,6 +45,9 @@ function displayEmployees() {
 }
 
 // Função para Calcular o total dos salários
+
+/* Através do reduce o array é reduzido ao total dos salarios acumulando cada um, através do acc, cujo valor inicial é 0 e o final é o valor do resultado. Em seguida é exibido um alerta com o valor total */
+
 function calculateTotalSalaries() {
   const totalSalaries = employees.reduce(
     (acc, employee) => acc + employee.salary,
@@ -53,3 +56,24 @@ function calculateTotalSalaries() {
 
   alert(`Total Salaries: $${totalSalaries}`);
 }
+
+//Função para exibir os detalhes dos funcionários de RH
+
+/* Filtra todos os funcionários cujo departamento seja 'HR' e em seguida itera sobre cada um desse funcionários encontrados para exibir na tela*/
+
+function displayRHemployees() {
+  const hrEmployees = employees.filter(
+    (employee) => employee.department === "HR",
+  );
+
+  const hrEmployeesDisplay = hrEmployees
+    .map(
+      (employee, index) =>
+        `<p>${employee.id}: ${employee.name} - ${employee.department} - ${employee.salary}</p>`,
+    )
+    .join("");
+
+    document.getElementById('employeesDetails').innerHTML = hrEmployeesDisplay;
+}
+
+
