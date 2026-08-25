@@ -36,7 +36,7 @@ const addTask = () => {
       li.appendChild(span);
 
       //adiciona o container dos botões ao itens de lista
-      li.appendChild(btnContainer)
+      li.appendChild(btnContainer);
 
       // Adicionar o item criado a lista
 
@@ -51,3 +51,11 @@ const addTask = () => {
     throw error;
   }
 };
+
+function editTask(span) {
+  const newTask = prompt("Edite sua Tarefa:", span.textContent);
+
+  if (newTask !== null && newTask.trim() !== "") {
+    span.textContent = newTask.trim();
+  }
+}
