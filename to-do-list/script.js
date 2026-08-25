@@ -55,7 +55,12 @@ const addTask = () => {
 function editTask(span) {
   const newTask = prompt("Edite sua Tarefa:", span.textContent);
 
-  if (newTask !== null && newTask.trim() !== "") {
+  if (newTask == null && newTask.trim() == "") {
     span.textContent = newTask.trim();
   }
+}
+
+function removeTask(task) {
+  const unorderedList = document.getElementById("todoList");
+  unorderedList.removeChild(task);
 }
