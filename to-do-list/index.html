@@ -1,13 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Lista de Tarefas</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>Lista de Tarefas</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          name="taskInput"
+          id="taskInput"
+          placeholder="Adicionar uma tarefa"
+        />
+
+        <button class="add-btn" onclick="addTask()">Adicionar Tarefa</button>
+      </div>
+
+      <div class="list-container">
+        <ul class="todo-list" id="todoList"></ul>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
