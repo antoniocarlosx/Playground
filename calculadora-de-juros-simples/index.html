@@ -1,16 +1,61 @@
-<html>
-    <head>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora de Juros Simples</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <header class="card-title">
+          <h2>Calculadora de Juros Simples</h2>
+        </header>
+
+        <form>
+          <div class="input-group">
+            <label for="amount">Capital</label>
+            <input
+              type="number"
+              name="amount"
+              id="amount"
+              placeholder="Qual o valor será calculado?"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="rate">Taxa</label>
+            <input
+              type="number"
+              name="rate"
+              id="rate"
+              placeholder="Qual a taxa?"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="time">Nº de Meses</label>
+            <input
+              type="number"
+              name="time"
+              id="time"
+              placeholder="Por quantos meses?"
+            />
+          </div>
+
+          <button class="calculate-btn" onclick="calculate()">Calcular</button>
+        </form>
+
+        <hr class="separator">
+
+        <output class="result">
+            <h3>Valor do Juros</h3>
+            Juros de 50% a.a.
+        </output>
+      </section>
+    </main>
+
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+  </body>
 </html>
