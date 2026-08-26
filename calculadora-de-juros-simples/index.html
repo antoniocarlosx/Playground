@@ -10,7 +10,7 @@
     <main class="container">
       <section class="card">
         <header class="card-title">
-          <h2>Calculadora de Juros Simples</h2>
+          <h2>Calculadora <br /><strong>Juros Simples</strong></h2>
         </header>
 
         <form novalidate>
@@ -38,9 +38,7 @@
               step="0.25"
               onchange="updateRate()"
             />
-            <div id="rate-value">
-                <span id="rate_val"></span>%<br />
-            </div>
+            <div id="rate-value"><span id="rate_val"></span><br /></div>
             <span id="rateError" class="mensagem-erro"></span>
           </div>
 
@@ -76,13 +74,15 @@
 
         <hr class="separator" />
 
-        <output class="result" id="result">
-          <h3>Valor do Juros</h3>
-        </output>
-        <footer>&#169; Feita por <strong>antoniocarlox</strong></footer>
+        <output class="result" id="result"> </output>
+
+        <footer>
+          <hr class="separator" />
+          &#169; Feita por <strong>antoniocarlox</strong>
+        </footer>
       </section>
     </main>
-    
+
     <script src="script.js"></script>
   </body>
 </html>

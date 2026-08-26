@@ -1,6 +1,6 @@
 function updateRate() {
   var rateVal = document.getElementById("rate").value;
-  document.getElementById("rate_val").innerText = rateVal;
+  document.getElementById("rate_val").innerText = `${rateVal}%`;
 }
 
 const calculate = () => {
@@ -37,20 +37,22 @@ const calculate = () => {
 
   if (principal <= 0) {
     alert("Digite um valor positivo");
+    document.getElementById("principal").focus();
+
     return;
   }
 
   if (years <= 0 || years > 10) {
     alert("Por favor digite entre 1 e 10");
+    document.getElementById("years").focus();
     return;
   }
 
-  result.innerHTML = `<p>
+  result.innerHTML = `<h3>Projeção de Crescimento</h3> <p>
     Se você depositar R$ <mark>${principal},00</mark>,
-  a uma taxa de juros de <mark>${rate}%</mark>,
-  você receberá uma quantia de R$ <mark>${amount}</mark>
+  a uma taxa de juros de <mark>${rate}% a.a.</mark>,
+  você receberá uma quantia de R$ <mark>${amount},00</mark>
   no ano de <mark>${year}</mark>.
 
-  </p>`
-  
+  </p>`;
 };

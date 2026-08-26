@@ -22,17 +22,22 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  padding: 10vh;
+  padding: 5vh;
+  height: 100vh;
 }
 
 .card {
+  display: flex;  
+  flex-direction: column;
   background-color: var(--dominant);
   width: 400px;
   max-width: 400px;
+  min-height: 450px;
   border: 1px solid #ccc;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 30px;
+  
 }
 
 .card-title {
@@ -41,6 +46,17 @@ body {
   color: var(--main-text);
   font-size: 16px;
   font-weight: bold;
+}
+
+.card-title strong{
+    color: #3498db;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.card-title strong:hover{
+    cursor: pointer;
+    color: var(--main-color-hover);
 }
 
 .input-group {
@@ -99,7 +115,8 @@ body {
 
 .result p{
     font-size: 15px;
-    text-align:center
+    text-align:center;
+    line-height: 1.6;
 }
 .result h3 {
   text-align: center;
@@ -124,6 +141,13 @@ body {
 
 #rate {
   width: 100%;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+#rate:hover{
+    background-color: var(--main-color-hover);
 }
 #rate-value span {
   margin-right: 3px;
@@ -132,7 +156,7 @@ body {
 footer {
   background-color: var(--dominant);
   text-align: center;
-  margin-top: 20px;
+  margin-top: auto;
   color: var(--second-color);
 }
 
