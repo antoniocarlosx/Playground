@@ -1,171 +1,432 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Antonio Carlos - Portfólio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header-global">
-        <nav class="nav-menu">
+      <div class="header-container">
+        <a href="#home" class="header-name">Antonio Carlos</a>
+        <div class="header-contact">
+          <a href="mailto:contact@antoniocarlosx.com" class="contact-item">
+            <img
+              src="html_finalprojimages/envelope.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+              class="contact-item__icon"
+            />
+            <p class="contact-item__text">contact@antoniocarlosx.com</p>
+          </a>
+          <a href="tel:+5588999999999" class="contact-item">
+            <img
+              src="html_finalprojimages/phone.png"
+              alt="https://icons8.com/icon/124377/circled-envelope"
+              class="contact-item__icon"
+            />
+            <p class="contact-item__text">+55 (88) 99999-9999</p>
+          </a>
+        </div>
 
+        <button class="menu-toggle" aria-label="Abrir Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#about-me" class="nav-link">Sobre Mim</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#skills" class="nav-link">Habilidades</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#projects" class="nav-link">Projetos</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#contact" class="nav-link">Contato</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#recommendations" class="nav-link">Recomendações</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#recommend-me" class="nav-link">Deixar Recomendação</a>
+            </li>
+          </ul>
         </nav>
+      </div>
     </header>
 
     <main class="main-container">
-        
-        <section class="section-hero">
+      <section class="section-hero">
+        <div class="container">
+          <h1 class="hero-title">Antonio Carlos</h1>
 
-            <div class="container">
-
-                <h1 class="hero-title">
-
-                </h1>
-
-                <p class="hero-subtitle">
-
-                </p>
-
-            </div>
-
-        </section>
-
-        <section id="about-me" class="section-content section-content--gray">
-
-            <div class="container">
-
-                <h2 class="section-title"></h2>
-                <p class="about-text"></p>
-
-            </div>
-
-        </section>
-
-        <section id="skills" class="section-content">
-
-            <div class="container">
-                <h2 class="section-title">
-                </h2>
-
-                <ul class="skills-grid">
-                    <li class="skill-item"></li>
-                    <li class="skill-item"></li>
-                    <li class="skill-item"></li>
-                    <li class="skill-item"></li>
-                </ul>
-            </div>
-
-        </section>
-
-        <section id="projects" class="section-content">
-
-            <div class="container">
-                <h2 class="section-title"></h2>
-                <div class="portfolio-grid">
-
-                    <article class="project-card">
-
-                        <img src="" alt="" class="project-card__image">
-                        <h2 class="project-card__title"></h2>
-                        <p class="project-card__text"></p>
-                        <div class="project-card__tags"></div>
-                        <a href="" class="btn-primary"></a>
-
-                    </article>
-
-
-                </div>
-            </div>
-
-        </section>
-
-        <section id="contact" class="section-content">
-            <div class="container">
-                <h2 class="section-title"></h2>
-                <ul class="contact-grid">
-                    <li class="contact-item"></li>
-                    <li class="contact-item"></li>
-                    <li class="contact-item"></li>
-                    <li class="contact-item"></li>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="recommendations" class="section-content">
-            <div class="container">
-                <h2 class="section-title"></h2>
-                <div class="recommendations-grid">
-                    <article class="recommendation-item">
-                        <span class="recommendation-item__quote">&#8220;</span>
-                        <h3 class="recommendation-item__title"></h3>
-                        <p class="recommendation-item__text"></p>
-                        <span class="quote">&#8221;</span>
-                    </article>
-
-                    <article class="recommendation-item">
-                        <span class="recommendation-item__quote">&#8220;</span>
-                        <h3 class="recommendation-item__title"></h3>
-                        <p class="recommendation-item__text"></p>
-                        <span class="quote">&#8221;</span>
-                    </article>
-
-                    <article class="recommendation-item">
-                        <span class="recommendation-item__quote">&#8220;</span>
-                        <h3 class="recommendation-item__title"></h3>
-                        <p class="recommendation-item__text"></p>
-                        <span class="quote">&#8221;</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="recommend-me" class="section-content">
-            <div class="container">
-                <h2 class="section-title"></h2>
-                <div class="leave-recommendation">
-                    <fieldset class="recommendation-form">
-                        <legend class="recommendation-form__title"></legend>
-                        <input type="text" class="recommendation-form__input">
-                        <textarea name="" id="" class="recommendation-form__message"></textarea>
-                        <div class="recommendation-form__action">
-                            <button class="recommendation-form__btn"></button>
-                        </div>
-                    </fieldset>
-                </div>
-            </div>
-        </section>
-
-        <div class="iconbutton">
-            <a href="#home"></a>
+          <p class="hero-subtitle">Desenvolvedor Full Stack</p>
         </div>
+      </section>
 
-        <div class="popup">
-            <img src="" alt="" class="popup__img">
-            <h3 class="popup__title"></h3>
-            <button class="popup__btn"></button>
-        </div> 
+      <section id="about-me" class="section-content section-content--gray">
+        <div class="container">
+          <div class="about-row">
+            <h2 class="section-title">Sobre Mim</h2>
+            <article class="about-row__card">
+              <img
+                src="html_finalprojimages/profile.jpeg"
+                alt="profile-image"
+                class="profile-image"
+              />
+            </article>
 
+            <article class="about-row__card">
+              <p class="about-text">
+                Olá, sou <strong>Antonio Carlos</strong>, tenho
+                <strong id="age">29</strong> anos e sou estudante de
+                <strong>Ciência da Computação</strong> e desenvolvedor
+                <strong>Full Stack</strong> <em>em formação</em>. <br />
+                <br />
+                Estou construindo minha <strong>experiência</strong> por meio da
+                <strong>prática</strong>, desenvolvendo projetos e aprimorando
+                meus conhecimentos em tecnologias de
+                <strong>front-end e back-end</strong>. <br />Meu objetivo é
+                evoluir continuamente como profissional, fortalecendo minha base
+                em
+                <strong
+                  >programação, desenvolvimento de sistemas e arquitetura de
+                  software</strong
+                >.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
+      <section id="skills" class="section-content">
+        <div class="container">
+          <h2 class="section-title">Minhas Habilidades</h2>
 
+          <ul class="skills-grid">
+            <li class="skill-item" id="html">
+              <img
+                src="html_finalprojimages/html5.png"
+                alt="html"
+                class="skill-item__icon"
+              />
+              <h6 class="skill-item__title">HTML</h6>
+              <p class="skill-item__text">Experiência: 1 ano</p>
+            </li>
+            <li class="skill-item" id="css">
+              <img
+                src="html_finalprojimages/CSS3.png"
+                alt="CSS"
+                class="skill-item__icon"
+              />
+              <h6 class="skill-item__title">CSS</h6>
+              <p class="skill-item__text">Experiência: 1 ano</p>
+            </li>
+            <li class="skill-item" id="js">
+              <img
+                src="html_finalprojimages/js.jpeg"
+                alt="JavaScript"
+                class="skill-item__icon"
+              />
+              <h6 class="skill-item__title">JavaScript</h6>
+              <p class="skill-item__text">Experiência: 1 ano</p>
+            </li>
+            <li class="skill-item" id="bootstrap">
+              <img
+                src="html_finalprojimages/bootstrap.png"
+                alt="bootstrap"
+                class="skill-item__icon"
+              />
+              <h6 class="skill-item__title">Bootstrap</h6>
+              <p class="skill-item__text">Experiência: 1 ano</p>
+            </li>
+            <li class="skill-item" id="react">
+              <img
+                src="html_finalprojimages/react.png"
+                alt="react"
+                class="skill-item__icon"
+              />
+              <h6 class="skill-item__title">React</h6>
+              <p class="skill-item__text">Experiência: 1 ano</p>
+            </li>
+            <li class="skill-item" id="node">
+              <img
+                src="html_finalprojimages/node.png"
+                alt="node.js"
+                class="skill-item__icon"
+              />
+              <h6 class="skill-item__title">Node.js</h6>
+              <p class="skill-item__text">Experiência: 1 ano</p>
+            </li>
+            <li class="skill-item" id="java">
+              <img
+                src="html_finalprojimages/java.png"
+                alt="java"
+                class="skill-item__icon"
+              />
+              <h6 class="skill-item__title">Java</h6>
+              <p class="skill-item__text">Experiência: 1 ano</p>
+            </li>
+            <li class="skill-item" id="python">
+              <img
+                src="html_finalprojimages/python.png"
+                alt="python"
+                class="skill-item__icon"
+              />
+              <h6 class="skill-item__title">Python</h6>
+              <p class="skill-item__text">Experiência: 2 anos</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <section id="projects" class="section-content">
+        <div class="container">
+          <h2 class="section-title">Meus Projetos</h2>
+          <div class="portfolio-grid">
+            <article class="project-card" id="calc-juros-simples">
+              <h2 class="project-card__title">Calculadora de Juros Simples</h2>
+              <p class="project-card__text">
+                Calculadora de juros simples que permite calcular de forma
+                rápida o valor dos juros e o montante final a partir do capital,
+                taxa e período informados. Desenvolvida com HTML5, CSS3 e
+                JavaScript.
+              </p>
+              <div class="project-card__tags">
+                <a href="#html">HTML5</a>
+                <a href="#css">CSS3</a>
+                <a href="#js">JavaScript</a>
+              </div>
+              <a
+                href="https://github.com/antoniocarlosx/playground/tree/main/calculadora-de-juros-simples"
+                class="btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Repositório</a
+              >
+            </article>
+            <article class="project-card" id="conversor-unidades">
+              <h2 class="project-card__title">
+                Conversor de Unidades Imperiais
+              </h2>
+              <p class="project-card__text">
+                Conversor de unidades que permite transformar valores entre
+                diferentes unidades do sistema imperial de forma rápida e
+                prática. Desenvolvido com HTML5, CSS3 e JavaScript.
+              </p>
+              <div class="project-card__tags">
+                <a href="#html">HTML5</a>
+                <a href="#css">CSS3</a>
+                <a href="#js">JavaScript</a>
+              </div>
+              <a
+                href="https://github.com/antoniocarlosx/playground/tree/main/conversor-de-unidades"
+                class="btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Repositório</a
+              >
+            </article>
+            <article class="project-card" id="employee-details">
+              <h2 class="project-card__title">Detalhes de Funcionários</h2>
+              <p class="project-card__text">
+                Exercício em JavaScript integrado com HTML e CSS para consultar
+                e filtrar informações de funcionários, incluindo listagem geral,
+                funcionários do RH, soma dos salários, busca por ID e
+                funcionários especializados em JavaScript.
+              </p>
+              <div class="project-card__tags">
+                <a href="#html">HTML5</a>
+                <a href="#css">CSS3</a>
+                <a href="#js">JavaScript</a>
+              </div>
+              <a
+                href="https://github.com/antoniocarlosx/playground/tree/main/employeeDetails"
+                class="btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Repositório</a
+              >
+            </article>
+            <article class="project-card" id="form-validation">
+              <h2 class="project-card__title">Validação de Formulário</h2>
+              <p class="project-card__text">
+                Formulário com validação de dados utilizando JavaScript,
+                verificando as informações preenchidas pelo usuário e exibindo
+                mensagens de acordo com os dados informados. Desenvolvido com
+                HTML5, CSS3 e JavaScript.
+              </p>
+              <div class="project-card__tags">
+                <a href="#html">HTML5</a>
+                <a href="#css">CSS3</a>
+                <a href="#js">JavaScript</a>
+              </div>
+              <a
+                href="https://github.com/antoniocarlosx/playground/tree/main/form-validation"
+                class="btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Repositório</a
+              >
+            </article>
+            <article class="project-card" id="to-do-list">
+              <h2 class="project-card__title">Lista de Tarefas</h2>
+              <p class="project-card__text">
+                Lista de tarefas simples que permite adicionar, visualizar e
+                organizar atividades, utilizando JavaScript para controlar as
+                interações da página. Desenvolvida com HTML5, CSS3 e JavaScript.
+              </p>
+              <div class="project-card__tags">
+                <a href="#html">HTML5</a>
+                <a href="#css">CSS3</a>
+                <a href="#js">JavaScript</a>
+              </div>
+              <a
+                href="https://github.com/antoniocarlosx/playground/tree/main/to-do-list"
+                class="btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver Repositório</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-content">
+        <div class="container">
+          <h2 class="section-title"></h2>
+          <ul class="contact-grid">
+            <li class="contact-item"></li>
+            <li class="contact-item"></li>
+            <li class="contact-item"></li>
+            <li class="contact-item"></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="recommendations" class="section-content">
+        <div class="container">
+          <h2 class="section-title"></h2>
+          <div class="recommendations-grid">
+            <article class="recommendation-item">
+              <span class="recommendation-item__quote">&#8220;</span>
+              <h3 class="recommendation-item__title">
+                Dedicação e Aprendizado
+              </h3>
+              <p class="recommendation-item__text">
+                Profissional dedicado, com facilidade para aprender novas
+                tecnologias e comprometido em buscar soluções para os desafios
+                encontrados.
+              </p>
+              <span class="quote">&#8221;</span>
+            </article>
+
+            <article class="recommendation-item">
+              <span class="recommendation-item__quote">&#8220;</span>
+              <h3 class="recommendation-item__title">
+                Organização e Comprometimento
+              </h3>
+              <p class="recommendation-item__text">
+                Demonstra organização, responsabilidade e comprometimento com as
+                atividades, mantendo o foco em entregar um trabalho bem
+                executado.
+              </p>
+              <span class="quote">&#8221;</span>
+            </article>
+
+            <article class="recommendation-item">
+              <span class="recommendation-item__quote">&#8220;</span>
+              <h3 class="recommendation-item__title">Evolução Constante</h3>
+              <p class="recommendation-item__text">
+                Apresenta uma postura de aprendizado contínuo e evolução,
+                colocando em prática os conhecimentos adquiridos e buscando
+                melhorar seus resultados.
+              </p>
+              <span class="quote">&#8221;</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="recommend-me" class="section-content">
+        <div class="container">
+          <h2 class="section-title">Sua opinião</h2>
+          <div class="leave-recommendation">
+            <fieldset class="recommendation-form">
+              <legend class="recommendation-form__title">
+                Compartilhe sua experiência
+              </legend>
+              <input
+                type="text"
+                class="recommendation-form__input"
+                placeholder="Seu Nome"
+              />
+              <textarea
+                name=""
+                id="new_recommendation"
+                cols="500"
+                rows="10"
+                placeholder="Sua mensagem"
+                class="recommendation-form__message"
+              ></textarea>
+              <div class="recommendation-form__action">
+                <button
+                  class="recommendation-form__btn"
+                  onclick="addRecommendation()"
+                >
+                  Enviar
+                </button>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+
+      <div class="iconbutton">
+        <a href="#home">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="black"
+            width="63px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="popup">
+        <img src="html_finalprojimages/checkmark--outline.svg" />
+        <h3>Muito Obrigado por seu feedback!</h3>
+        <button onclick="showPopup(false)">Ok</button>
+      </div>
     </main>
 
     <footer class="footer-global">
-        <div class="container">
-            <p class="footer-text"></p>
-            <ul class="footer-page-links">
-                <li class="page-link"></li>
-                <li class="page-link"></li>
-                <li class="page-link"></li>
-                <li class="page-link"></li>
-                <li class="page-link"></li>
-                <li class="page-link"></li>
-                <li class="page-link"></li>
-            </ul>
-        </div>
+      <div class="container">
+        <p class="footer-text">&copy; Desenvolvido por Antonio Carlos</p>
+        <ul class="footer-page-links">
+          <li class="page-link"><a href="#about-me"></a></li>
+          <li class="page-link"><a href="#skills"></a></li>
+          <li class="page-link"><a href="#projects"></a></li>
+          <li class="page-link"><a href="#contact"></a></li>
+          <li class="page-link"><a href="#recommendations"></a></li>
+          <li class="page-link"><a href="#recommend-me"></a></li>
+        </ul>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
