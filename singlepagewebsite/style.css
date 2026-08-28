@@ -407,6 +407,7 @@ hr {
   color: var(--main-text);
   font-size: 1rem;
   color: var(--main-color);
+  
 }
 
 .contact-item a:hover {
@@ -414,9 +415,11 @@ hr {
 }
 
 .contact-item i {
+  display: flex;
   font-size: 2rem;
   margin-bottom: 0.5rem;
   color: var(--main-color);
+  justify-content: center;
 }
 .recommendations-grid {
   display: flex;
