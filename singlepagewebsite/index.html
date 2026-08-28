@@ -10,6 +10,10 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Antonio Carlos - Portfólio</title>
@@ -20,21 +24,21 @@
         <div class="name-container">
           <a href="#home" class="header-name">Antonio Carlos</a>
           <div class="header-contact">
-            <a href="mailto:contact@antoniocarlosx.com" class="contact-item">
+            <a href="mailto:contact@antoniocarlosx.com" class="contact-header">
               <img
                 src="html_finalprojimages/envelope.png"
                 alt="https://icons8.com/icon/124377/circled-envelope"
-                class="contact-item__icon"
+                class="contact-header__icon"
               />
-              <p class="contact-item__text">contact@antoniocarlosx.com</p>
+              <p class="contact-header__text">contact@antoniocarlosx.com</p>
             </a>
-            <a href="tel:+5588999999999" class="contact-item">
+            <a href="tel:+5588999999999" class="contact-header">
               <img
                 src="html_finalprojimages/phone.png"
                 alt="https://icons8.com/icon/124377/circled-envelope"
-                class="contact-item__icon"
+                class="contact-header__icon"
               />
-              <p class="contact-item__text">+55 (88) 99999-9999</p>
+              <p class="contact-header__text">+55 (88) 99999-9999</p>
             </a>
           </div>
         </div>
@@ -275,7 +279,7 @@
                 Formulário com validação de dados, verificando as informações
                 preenchidas pelo usuário e exibindo mensagens.
               </p>
-              <hr>
+              <hr />
               <div class="project-card__container-tags">
                 <a href="#html" class="project-card__tags">HTML5</a>
                 <a href="#css" class="project-card__tags">CSS3</a>
@@ -296,7 +300,7 @@
                 organizar atividades, utilizando JavaScript para controlar as
                 interações da página.
               </p>
-              <hr>
+              <hr />
               <div class="project-card__container-tags">
                 <a href="#html" class="project-card__tags">HTML5</a>
                 <a href="#css" class="project-card__tags">CSS3</a>
@@ -316,12 +320,20 @@
 
       <section id="contact" class="section-content">
         <div class="container">
-          <h2 class="section-title"></h2>
+          <h2 class="section-title">Redes Sociais</h2>
           <ul class="contact-grid">
-            <li class="contact-item"></li>
-            <li class="contact-item"></li>
-            <li class="contact-item"></li>
-            <li class="contact-item"></li>
+            <li class="contact-item">
+              <i class="bi bi-instagram"></i>
+              <a href="https://intagram.com/">Instagram</a>
+            </li>
+            <li class="contact-item">
+              <i class="bi bi-github"></i>
+              <a href="https://github.com/antoniobarros97">GitHub</a>
+            </li>
+            <li class="contact-item">
+              <i class="bi bi-linkedin"></i>
+              <a href="http://linkedin.com/">LinkedIn</a>
+            </li>
           </ul>
         </div>
       </section>
@@ -331,40 +343,40 @@
           <h2 class="section-title"></h2>
           <div class="recommendations-grid">
             <article class="recommendation-item">
-              <span class="recommendation-item__quote">&#8220;</span>
               <h3 class="recommendation-item__title">
                 Dedicação e Aprendizado
               </h3>
+              <span class="recommendation-item__quote">&#8220;</span>
               <p class="recommendation-item__text">
                 Profissional dedicado, com facilidade para aprender novas
                 tecnologias e comprometido em buscar soluções para os desafios
                 encontrados.
               </p>
-              <span class="quote">&#8221;</span>
+              <span class="recommendation-item__quote-end">&#8221;</span>
             </article>
 
             <article class="recommendation-item">
-              <span class="recommendation-item__quote">&#8220;</span>
               <h3 class="recommendation-item__title">
                 Organização e Comprometimento
               </h3>
+              <span class="recommendation-item__quote">&#8220;</span>
               <p class="recommendation-item__text">
                 Demonstra organização, responsabilidade e comprometimento com as
                 atividades, mantendo o foco em entregar um trabalho bem
                 executado.
               </p>
-              <span class="quote">&#8221;</span>
+              <span class="recommendation-item__quote-end">&#8221;</span>
             </article>
 
             <article class="recommendation-item">
-              <span class="recommendation-item__quote">&#8220;</span>
               <h3 class="recommendation-item__title">Evolução Constante</h3>
+              <span class="recommendation-item__quote">&#8220;</span>
               <p class="recommendation-item__text">
                 Apresenta uma postura de aprendizado contínuo e evolução,
                 colocando em prática os conhecimentos adquiridos e buscando
                 melhorar seus resultados.
               </p>
-              <span class="quote">&#8221;</span>
+              <span class="recommendation-item__quote-end">&#8221;</span>
             </article>
           </div>
         </div>
@@ -386,8 +398,7 @@
               <textarea
                 name=""
                 id="new_recommendation"
-                cols="500"
-                rows="10"
+                
                 placeholder="Sua mensagem"
                 class="recommendation-form__message"
               ></textarea>
@@ -434,12 +445,12 @@
       <div class="container">
         <p class="footer-text">&copy; Desenvolvido por Antonio Carlos</p>
         <ul class="footer-page-links">
-          <li class="page-link"><a href="#about-me"></a></li>
-          <li class="page-link"><a href="#skills"></a></li>
-          <li class="page-link"><a href="#projects"></a></li>
-          <li class="page-link"><a href="#contact"></a></li>
-          <li class="page-link"><a href="#recommendations"></a></li>
-          <li class="page-link"><a href="#recommend-me"></a></li>
+          <li class="page-link"><a href="#about-me">Sobre Mim</a></li>
+          <li class="page-link"><a href="#skills">Habilidades</a></li>
+          <li class="page-link"><a href="#projects">Projetos</a></li>
+          <li class="page-link"><a href="#contact">Contato</a></li>
+          <li class="page-link"><a href="#recommendations">Recomendações</a></li>
+          <li class="page-link"><a href="#recommend-me">Deixe sua Opinião</a></li>
         </ul>
       </div>
     </footer>
