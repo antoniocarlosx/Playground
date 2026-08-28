@@ -378,8 +378,8 @@ hr {
 
 .btn-primary {
   display: flex;
-  padding: 0.25rem ;
- 
+  padding: 0.25rem;
+
   background-color: var(--main-color);
   border-radius: 0.5rem;
   font-size: 0.85rem;
@@ -390,7 +390,7 @@ hr {
   color: #fff;
   border: none;
   border-radius: 0.5rem;
-  
+
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -507,13 +507,12 @@ hr {
 }
 
 .recommendation-form__input {
-  
   padding: 0.5rem;
   border-radius: 5px;
   width: 300px;
 }
 
-.recommendation-form__message{
+.recommendation-form__message {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
@@ -522,7 +521,6 @@ hr {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.15);
 
-  
   padding: 1rem;
   color: var(--main-text);
   outline: none;
@@ -530,24 +528,23 @@ hr {
 }
 
 .recommendation-form__message {
-  min-height: 150px; /* Garante um tamanho bom inicial */
-  max-height: 400px; /* Evita que o usuário estique demais */
-  resize: vertical; /* Permite apenas redimensionar para baixo */
+  min-height: 150px; 
+  max-height: 400px; 
+  resize: vertical;
   line-height: 1.6;
 }
 
 .recommendation-form__input:focus,
 .recommendation-form__message:focus {
-  border-color: var(--main-color); /* Acende com o roxo da sua marca */
+  border-color: var(--main-color); 
   background: var(--main-text);
-  box-shadow: 0 0 0 4px rgba(147, 51, 234, 0.15); /* Brilho roxo sutil ao redor */
+  box-shadow: 0 0 0 4px rgba(147, 51, 234, 0.15); 
 }
 
 .recommendation-form__input::placeholder,
 .recommendation-form__message::placeholder {
   color: var(--dominant);
   opacity: 0.6;
-  
 }
 
 .recommendation-form__action {
@@ -573,8 +570,7 @@ hr {
 .recommendation-form__btn:active {
   transform: scale(0.98);
 }
-.recommendation-form__btn {
-}
+
 .iconbutton {
   width: 48px;
   height: 48px;
@@ -589,18 +585,16 @@ hr {
   cursor: pointer;
 }
 
-.popup img{
+.popup img {
   height: 75px;
-  
-  
 }
 
-.popup h3{
+.popup h3 {
   color: var(--dominant);
   font-weight: bold;
 }
 
-.popup button{
+.popup button {
   display: flex;
   border: none;
   border-radius: 5px;
@@ -610,11 +604,11 @@ hr {
   margin-left: 68px;
   color: var(--dominant);
   font-weight: bold;
-  font-size: 1rem;  
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.popup button:hover{
+.popup button:hover {
   background-color: var(--second-color);
   color: var(--main-text);
   font-weight: bold;
@@ -624,7 +618,7 @@ hr {
   flex-direction: column;
   padding: 2rem;
   gap: 2rem;
-  width:300px;
+  width: 300px;
   background-color: rgba(168, 85, 245, 0.9);
   border-radius: 3mm;
   top: 50%;
@@ -657,8 +651,7 @@ hr {
   color: var(--main-text);
   list-style-type: none;
 }
-.page-link {
-} /* ========================= RESPONSIVIDADE ========================= */
+ /* ========================= RESPONSIVIDADE ========================= */
 @media (max-width: 767px) {
   .section-hero {
     flex-direction: column;
@@ -675,5 +668,191 @@ hr {
   .header-name {
     font-size: 1.2rem;
     letter-spacing: 3px;
+  }
+
+  .header-container {
+    padding: 10px 15px;
+  }
+
+  .header-name {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  .menu-toggler {
+    padding: 5px;
+  }
+
+  .section-hero {
+    flex-direction: column;
+    min-height: auto;
+    padding: 4rem 1.25rem;
+  }
+
+  .section-hero .container {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .about-row__card {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .profile-image {
+    width: 65vw;
+    height: 65vw;
+    max-height: 260px;
+    max-width: 260px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-skills {
+    display: flex;
+    min-height: auto;
+    padding: 4rem 0;
+    justify-content: center;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0 1.25rem;
+    gap: 1rem;
+  }
+
+  .skill-item {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .portfolio-grid {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0 1.25rem;
+    gap: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .project-card__title {
+    height: auto;
+    min-height: 0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .recommendations-grid {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+  }
+
+  .recommendation-item {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    padding: 1.5rem;
+  }
+
+  .recommendation-item__title {
+    font-size: 1.5rem;
+  }
+
+  .recommendation-item__text {
+    font-size: 1rem;
+  }
+
+  .recommendation-item__title {
+    font-size: 1.5rem;
+  }
+
+  .recommendation-item__text {
+    font-size: 1rem;
+  }
+
+  .recommendation-form__input {
+    width: 100%;
+  }
+
+  .recommendation-form__input,
+  .recommendation-form__message {
+    width: 100%;
+  }
+
+  .recommendation-form__action {
+    justify-content: stretch;
+  }
+
+  .recommendation-form__btn {
+    width: 100%;
+  }
+
+  .recommendation-form__action {
+    justify-content: stretch;
+  }
+
+  .recommendation-form__btn {
+    width: 100%;
+  }
+
+  .footer-global {
+    padding: 3rem 1rem;
+  }
+
+  .footer-page-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    text-align: center;
+  }
+
+  .footer-text {
+    text-align: center;
+    line-height: 1.5;
   }
 }
