@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Antonio Carlos - Portfólio</title>
@@ -32,7 +39,7 @@
           </div>
         </div>
 
-        <button class="menu-toggle" aria-label="Abrir Menu">
+        <button class="menu-toggler" aria-label="Abrir Menu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -56,7 +63,7 @@
               <a href="#recommendations" class="nav-link">Recomendações</a>
             </li>
             <li class="nav-list-item">
-              <a href="#recommend-me" class="nav-link">Deixar Recomendação</a>
+              <a href="#recommend-me" class="nav-link">Avaliar</a>
             </li>
           </ul>
         </nav>
@@ -66,16 +73,30 @@
     <main class="main-container">
       <section class="section-hero">
         <div class="container">
-          <h1 class="hero-title">Antonio Carlos</h1>
+          <div class="hero-card__title">
+            <h1 class="hero-title">
+              Antonio <br />
+              <strong class="strong-title">Carlos</strong>
+            </h1>
+          </div>
 
-          <p class="hero-subtitle">Desenvolvedor Full Stack</p>
+          <div class="hero-card__subtitle">
+            <p class="hero-subtitle">
+              Desenvolvedor
+              <strong class="strong-subtitle">Full Stack</strong> em formação,
+              construindo soluções do
+              <strong class="strong-subtitle">front-end</strong> ao
+              <strong class="strong-subtitle">back-end</strong>.
+            </p>
+            <a class="hero-btn" href="#projects">Ver meus projetos</a>
+          </div>
         </div>
       </section>
 
-      <section id="about-me" class="section-content section-content--gray">
+      <section id="about-me" class="section-content about-section">
         <div class="container">
+          <h2 class="section-title">Sobre Mim</h2>
           <div class="about-row">
-            <h2 class="section-title">Sobre Mim</h2>
             <article class="about-row__card">
               <img
                 src="html_finalprojimages/profile.jpeg"
@@ -94,9 +115,9 @@
                 Estou construindo minha <strong>experiência</strong> por meio da
                 <strong>prática</strong>, desenvolvendo projetos e aprimorando
                 meus conhecimentos em tecnologias de
-                <strong>front-end e back-end</strong>. <br />Meu objetivo é
-                evoluir continuamente como profissional, fortalecendo minha base
-                em
+                <strong>front-end e back-end</strong>. <br />
+                <br />Meu objetivo é evoluir continuamente como profissional,
+                fortalecendo minha base em
                 <strong
                   >programação, desenvolvimento de sistemas e arquitetura de
                   software</strong
@@ -107,82 +128,72 @@
         </div>
       </section>
 
-      <section id="skills" class="section-content">
+      <section id="skills" class="section-skills">
         <div class="container">
           <h2 class="section-title">Minhas Habilidades</h2>
 
           <ul class="skills-grid">
             <li class="skill-item" id="html">
               <img
-                src="html_finalprojimages/html5.png"
-                alt="html"
-                class="skill-item__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
               />
+
               <h6 class="skill-item__title">HTML</h6>
-              <p class="skill-item__text">Experiência: 1 ano</p>
+              <p class="skill-item__text">1 ano</p>
             </li>
             <li class="skill-item" id="css">
               <img
-                src="html_finalprojimages/CSS3.png"
-                alt="CSS"
-                class="skill-item__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
               />
+
               <h6 class="skill-item__title">CSS</h6>
-              <p class="skill-item__text">Experiência: 1 ano</p>
+              <p class="skill-item__text">1 ano</p>
             </li>
             <li class="skill-item" id="js">
               <img
-                src="html_finalprojimages/js.jpeg"
-                alt="JavaScript"
-                class="skill-item__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
               />
+
               <h6 class="skill-item__title">JavaScript</h6>
-              <p class="skill-item__text">Experiência: 1 ano</p>
+              <p class="skill-item__text">1 ano</p>
             </li>
             <li class="skill-item" id="bootstrap">
               <img
-                src="html_finalprojimages/bootstrap.png"
-                alt="bootstrap"
-                class="skill-item__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
               />
+
               <h6 class="skill-item__title">Bootstrap</h6>
-              <p class="skill-item__text">Experiência: 1 ano</p>
+              <p class="skill-item__text">1 ano</p>
             </li>
             <li class="skill-item" id="react">
               <img
-                src="html_finalprojimages/react.png"
-                alt="react"
-                class="skill-item__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
               />
+
               <h6 class="skill-item__title">React</h6>
-              <p class="skill-item__text">Experiência: 1 ano</p>
+              <p class="skill-item__text">1 ano</p>
             </li>
             <li class="skill-item" id="node">
-              <img
-                src="html_finalprojimages/node.png"
-                alt="node.js"
-                class="skill-item__icon"
-              />
+              <i class="devicon-nodejs-plain-wordmark"></i>
+
               <h6 class="skill-item__title">Node.js</h6>
-              <p class="skill-item__text">Experiência: 1 ano</p>
+              <p class="skill-item__text">1 ano</p>
             </li>
             <li class="skill-item" id="java">
               <img
-                src="html_finalprojimages/java.png"
-                alt="java"
-                class="skill-item__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
               />
+
               <h6 class="skill-item__title">Java</h6>
-              <p class="skill-item__text">Experiência: 1 ano</p>
+              <p class="skill-item__text">1 ano</p>
             </li>
             <li class="skill-item" id="python">
               <img
-                src="html_finalprojimages/python.png"
-                alt="python"
-                class="skill-item__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
               />
+
               <h6 class="skill-item__title">Python</h6>
-              <p class="skill-item__text">Experiência: 2 anos</p>
+              <p class="skill-item__text">2 anos</p>
             </li>
           </ul>
         </div>
@@ -197,13 +208,13 @@
               <p class="project-card__text">
                 Calculadora de juros simples que permite calcular de forma
                 rápida o valor dos juros e o montante final a partir do capital,
-                taxa e período informados. Desenvolvida com HTML5, CSS3 e
-                JavaScript.
+                taxa e período informados.
               </p>
-              <div class="project-card__tags">
-                <a href="#html">HTML5</a>
-                <a href="#css">CSS3</a>
-                <a href="#js">JavaScript</a>
+              <hr />
+              <div class="project-card__container-tags">
+                <a href="#html" class="project-card__tags">HTML5</a>
+                <a href="#css" class="project-card__tags">CSS3</a>
+                <a href="#js" class="project-card__tags">JavaScript</a>
               </div>
               <a
                 href="https://github.com/antoniocarlosx/playground/tree/main/calculadora-de-juros-simples"
@@ -220,13 +231,15 @@
               <p class="project-card__text">
                 Conversor de unidades que permite transformar valores entre
                 diferentes unidades do sistema imperial de forma rápida e
-                prática. Desenvolvido com HTML5, CSS3 e JavaScript.
+                prática.
               </p>
-              <div class="project-card__tags">
-                <a href="#html">HTML5</a>
-                <a href="#css">CSS3</a>
-                <a href="#js">JavaScript</a>
+              <hr />
+              <div class="project-card__container-tags">
+                <a href="#html" class="project-card__tags">HTML5</a>
+                <a href="#css" class="project-card__tags">CSS3</a>
+                <a href="#js" class="project-card__tags">JavaScript</a>
               </div>
+
               <a
                 href="https://github.com/antoniocarlosx/playground/tree/main/conversor-de-unidades"
                 class="btn-primary"
@@ -238,15 +251,15 @@
             <article class="project-card" id="employee-details">
               <h2 class="project-card__title">Detalhes de Funcionários</h2>
               <p class="project-card__text">
-                Exercício em JavaScript integrado com HTML e CSS para consultar
-                e filtrar informações de funcionários, incluindo listagem geral,
-                funcionários do RH, soma dos salários, busca por ID e
-                funcionários especializados em JavaScript.
+                Exercício para consultar e filtrar informações de funcionários,
+                incluindo listagem geral, funcionários do RH, soma dos salários
+                e busca por ID.
               </p>
-              <div class="project-card__tags">
-                <a href="#html">HTML5</a>
-                <a href="#css">CSS3</a>
-                <a href="#js">JavaScript</a>
+              <hr />
+              <div class="project-card__container-tags">
+                <a href="#html" class="project-card__tags">HTML5</a>
+                <a href="#css" class="project-card__tags">CSS3</a>
+                <a href="#js" class="project-card__tags">JavaScript</a>
               </div>
               <a
                 href="https://github.com/antoniocarlosx/playground/tree/main/employeeDetails"
@@ -259,15 +272,14 @@
             <article class="project-card" id="form-validation">
               <h2 class="project-card__title">Validação de Formulário</h2>
               <p class="project-card__text">
-                Formulário com validação de dados utilizando JavaScript,
-                verificando as informações preenchidas pelo usuário e exibindo
-                mensagens de acordo com os dados informados. Desenvolvido com
-                HTML5, CSS3 e JavaScript.
+                Formulário com validação de dados, verificando as informações
+                preenchidas pelo usuário e exibindo mensagens.
               </p>
-              <div class="project-card__tags">
-                <a href="#html">HTML5</a>
-                <a href="#css">CSS3</a>
-                <a href="#js">JavaScript</a>
+              <hr>
+              <div class="project-card__container-tags">
+                <a href="#html" class="project-card__tags">HTML5</a>
+                <a href="#css" class="project-card__tags">CSS3</a>
+                <a href="#js" class="project-card__tags">JavaScript</a>
               </div>
               <a
                 href="https://github.com/antoniocarlosx/playground/tree/main/form-validation"
@@ -282,12 +294,13 @@
               <p class="project-card__text">
                 Lista de tarefas simples que permite adicionar, visualizar e
                 organizar atividades, utilizando JavaScript para controlar as
-                interações da página. Desenvolvida com HTML5, CSS3 e JavaScript.
+                interações da página.
               </p>
-              <div class="project-card__tags">
-                <a href="#html">HTML5</a>
-                <a href="#css">CSS3</a>
-                <a href="#js">JavaScript</a>
+              <hr>
+              <div class="project-card__container-tags">
+                <a href="#html" class="project-card__tags">HTML5</a>
+                <a href="#css" class="project-card__tags">CSS3</a>
+                <a href="#js" class="project-card__tags">JavaScript</a>
               </div>
               <a
                 href="https://github.com/antoniocarlosx/playground/tree/main/to-do-list"
