@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Muda dinâmicamente a idade da seção sobre mim
 const getAge = () => {
   // 1. Pega o ID que pertence especificamente a idade da seção sobre mim
   const ageID = document.getElementById("age");
@@ -42,3 +43,38 @@ const getAge = () => {
 };
 
 getAge();
+
+function addRecommendation() {
+  // Pega a mensagem da recomendação
+  let recommendation = document.getElementById("new_recommendation");
+  let nameRecommendation = document.getElementById("recommendation-name");
+
+  if (!recommendation || recommendation.value.trim() === "") {
+    alert("Se quiser recomendar, digite um texto");
+    showPopup(false);
+    return;
+  }
+
+  const nameFilled = nameRecommendation ? nameRecommendation.value.trim() : "";
+
+  const htmlName = nameFilled
+    ? `<span class="recommendation-name">- ${nameFilled}</span>`
+    : "";
+
+  articleElement = document.createElement("article");
+  articleElement.setAttribute("class", "recommendation-item");
+
+  articleElement.innerHTML = `
+
+    <span class="recommendation-item__quote">&#8220;</span>
+    <p class="recommendation-item__text">
+     ${recommendation.value}          
+    </p>
+    <span class="recommendation-item__quote-end">&#8221;</span>
+    ${htmlName} 
+  `;
+
+  document.getElementById("all_recommendations").appendChild(articleElement);
+
+  recommendation.value = "";
+}

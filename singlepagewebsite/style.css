@@ -51,7 +51,7 @@ header {
 }
 .name-container a:hover {
   font-weight: bold;
-  color: var(--second-color);
+  color: brightness(1.2);
 }
 .header-name {
   margin-left: 3px;
@@ -140,7 +140,7 @@ header {
 }
 .nav-link:hover {
   font-weight: bold;
-  color: var(--second-color);
+  color: brightness(1.2);
 } /* ========================= DESKTOP NAVIGATION ========================= */
 @media (min-width: 768px) {
   .menu-toggler {
@@ -194,9 +194,10 @@ header {
   cursor: pointer;
 }
 .hero-title:hover {
-  color: var(--main-color-hover);
+  color: brightness(1.2);
 }
 .hero-subtitle {
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   font-size: clamp(1.25rem, 3vw, 2rem);
 }
@@ -204,16 +205,18 @@ header {
   color: var(--main-color);
 }
 .hero-btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  color: var(--dominant);
   background-color: var(--main-color);
+  color: #fff;
+  border: none;
   border-radius: 0.5rem;
-  font-weight: 500;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
   text-decoration: none;
 }
 .hero-btn:hover {
-  background-color: var(--main-color-hover);
+  filter: brightness(1.2);
 } /* ========================= ABOUT ========================= */
 .about-section {
   display: flex;
@@ -334,7 +337,7 @@ header {
 }
 
 .project-card__title:hover {
-  color: var(--main-color-hover);
+  color: brightness(1.2);
   cursor: pointer;
 }
 .project-card__text {
@@ -375,21 +378,30 @@ hr {
 
 .btn-primary {
   display: flex;
-  padding: 0.25rem;
-  color: var(--dominant);
+  padding: 0.25rem ;
+ 
   background-color: var(--main-color);
   border-radius: 0.5rem;
   font-size: 0.85rem;
   font-weight: bold;
   text-align: center;
   justify-content: center;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .project-card__tags:hover {
   background-color: var(--main-text);
 }
 .btn-primary:hover {
-  background-color: var(--main-color-hover);
+  filter: brightness(1.2);
 }
 .contact-grid {
   display: flex;
@@ -407,11 +419,10 @@ hr {
   color: var(--main-text);
   font-size: 1rem;
   color: var(--main-color);
-  
 }
 
 .contact-item a:hover {
-  color: var(--main-color-hover);
+  color: brightness(1.2);
 }
 
 .contact-item i {
@@ -426,6 +437,7 @@ hr {
   gap: 1rem;
   padding: 2rem;
   height: max-content;
+  justify-content: center;
 }
 .recommendation-item {
   border: 1px solid var(--main-color);
@@ -434,6 +446,11 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 400px;
+  height: 450px;
+}
+.recommendation-name {
+  text-align: end;
 }
 .recommendation-item__quote {
   font-size: 4rem;
@@ -469,9 +486,8 @@ hr {
 }
 
 .leave-recommendation {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  justify-content: center;
 }
 .recommendation-form {
   display: flex;
@@ -482,7 +498,6 @@ hr {
   gap: 1.5rem;
   width: 60rem;
   padding: 1rem;
- 
 }
 .recommendation-form__title {
   color: var(--main-text);
@@ -490,12 +505,24 @@ hr {
   font-weight: 600;
   padding: 0 0.5rem;
 }
+
+.recommendation-form__input {
+  
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.recommendation-form__message{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
 .recommendation-form__input .recommendation-form__message {
- 
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.15);
+
   
-  border-radius: 0.5rem;
   padding: 1rem;
   color: var(--main-text);
   outline: none;
@@ -512,14 +539,15 @@ hr {
 .recommendation-form__input:focus,
 .recommendation-form__message:focus {
   border-color: var(--main-color); /* Acende com o roxo da sua marca */
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--main-text);
   box-shadow: 0 0 0 4px rgba(147, 51, 234, 0.15); /* Brilho roxo sutil ao redor */
 }
 
 .recommendation-form__input::placeholder,
 .recommendation-form__message::placeholder {
-  color: #a1a1aa;
+  color: var(--dominant);
   opacity: 0.6;
+  
 }
 
 .recommendation-form__action {
@@ -536,23 +564,22 @@ hr {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
- 
 }
 
 .recommendation-form__btn:hover {
-  filter: brightness(1.2); 
+  filter: brightness(1.2);
 }
 
 .recommendation-form__btn:active {
-  transform: scale(0.98); 
+  transform: scale(0.98);
 }
 .recommendation-form__btn {
 }
-.iconbutton{
+.iconbutton {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color:var(--main-color);
+  background-color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -563,43 +590,38 @@ hr {
 }
 
 .popup {
-  width:400px;
+  width: 400px;
   background-color: var(--main-color);
   border-radius: 3mm;
   top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   position: fixed;
   /* padding: 30px; */
   visibility: hidden;
 }
 .footer-global {
-    
-    padding: 5rem ;
-    
-    
+  padding: 5rem;
 }
 
-.footer-global a{
-    text-decoration: none;
-    color: var(--main-text);
-    
+.footer-global a {
+  text-decoration: none;
+  color: var(--main-text);
 }
 .footer-text {
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 .footer-page-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    color: var(--main-text);
-    list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--main-text);
+  list-style-type: none;
 }
 .page-link {
 } /* ========================= RESPONSIVIDADE ========================= */
