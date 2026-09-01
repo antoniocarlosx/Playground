@@ -1,0 +1,71 @@
+/* ImageRatingComponent.css */
+
+.content-rating {
+    margin: 2rem;
+    margin-left: 25%;
+    padding: 1.25rem;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+  }
+
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    color: darkblue;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-weight: 4500;
+  }
+  
+  .image {
+    max-width: 100%;
+    border: 1.01px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rating-buttons {
+    margin-top: 10px;
+  }
+
+  .content{
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .totalRatings{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .like-button,
+  .dislike-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .like-button:hover,
+  .dislike-button:hover {
+    background-color: #2980b9;
+  }
+  
+  #reactInfo{
+    max-width: 400px;
+    text-align: justify;
+  }
