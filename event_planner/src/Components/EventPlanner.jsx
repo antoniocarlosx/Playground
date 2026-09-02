@@ -1,5 +1,6 @@
 import React from "react";
 import "./EventPlanner.css"; // Import CSS file for styling
+import Footer from "./Footer";
 
 const EventPlanner = () => {
   return (
@@ -10,7 +11,7 @@ const EventPlanner = () => {
       </header>
 
       {/*Seção que descreve a visão geral do app*/}
-      <section className="description">
+      <section className="description" id="description">
         <p>
           Planeje e organize seus eventos sem esforço com o Event Planner. De
           aniversários a reuniões corporativas, nós cuidamos de tudo.
@@ -20,7 +21,7 @@ const EventPlanner = () => {
       </section>
 
       {/*Seção para categorizar os diferentes tipos de evento*/}
-      <section className="events_categories">
+      <section className="events_categories" id="events_categories">
         <ul>
           <h2>Eventos Sociais:</h2>
           <li>Festas de aniversário</li>
@@ -53,7 +54,7 @@ const EventPlanner = () => {
       </section>
 
       {/*Seção para destacar as funcionalidades do app*/}
-      <section className="features">
+      <section className="features" id="features">
         <h2>Recursos</h2>
         <ul>
           <li>Fácil criação e gerenciamento de eventos</li>
@@ -65,7 +66,7 @@ const EventPlanner = () => {
       </section>
 
       {/*Seção para avaliações*/}
-      <section className="testimonials">
+      <section className="testimonials" id="testimonials">
         <h2>Depoimentos</h2>
         <div className="testimonial">
           <p>
@@ -84,7 +85,7 @@ const EventPlanner = () => {
       </section>
 
       {/*Seção com informações de contato*/}
-      <section className="contact">
+      <section className="contact" id="contact">
         <h2>Entre em Contato</h2>
         <form>
             <input type="text" placeholder="Nome" />
@@ -93,6 +94,8 @@ const EventPlanner = () => {
             <button className="submit-button">Enviar</button>
         </form>
       </section>
+
+      <Footer className="event-planner-container"></Footer>
     </div>
   );
 };
