@@ -1,12 +1,17 @@
 import React from "react";
 import "./EventPlanner.css"; // Import CSS file for styling
 import Footer from "./Footer";
+import Navbar from "./NavBar";
 
 const EventPlanner = () => {
   return (
     <div className="event-planner-container">
+      <div className="navbar-container">
+         <Navbar></Navbar>
+      </div>
+    
       {/*Cabeçalho da página*/}
-      <header>
+      <header id="home">
         <h1>Bem-vindo ao Event Planner!</h1>
       </header>
 

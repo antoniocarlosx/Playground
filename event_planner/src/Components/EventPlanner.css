@@ -11,6 +11,10 @@
     background-size: 100px 100px; /* Adjust the size based on the pattern */
   }
   
+ .navbar-container {
+  
+}
+
   header h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -116,11 +120,14 @@
     gap: 30px;
     justify-content: center;
     
+    
 }
 .events_categories ul{
     background-color: rgba(0,0,0,0.2);
     width: 270px;
     /* padding: 0 10px; */
+    
+    padding-bottom: 2rem;
 }
   .events_categories ul h2{
     background-color: #e46a9d;
@@ -132,6 +139,8 @@
     list-style-type: none;
     font-size: 1.1rem;
     line-height: 24px;
+    
+    padding: 2px;
   }
 
   .footer .links-row{
