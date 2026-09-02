@@ -121,6 +121,7 @@
     justify-content: center;
     
     
+    
 }
 .events_categories ul{
     background-color: rgba(0,0,0,0.2);
@@ -128,12 +129,14 @@
     /* padding: 0 10px; */
     
     padding-bottom: 2rem;
+    border-radius: 5px;
 }
   .events_categories ul h2{
     background-color: #e46a9d;
     text-align: center;
     padding: 5px 10px;
     color: white;
+    border-radius: 5px;
   }
   .events_categories ul li{
     list-style-type: none;
