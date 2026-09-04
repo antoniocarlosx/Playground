@@ -11,19 +11,30 @@ const TodoList = () => {
     // Verifica se a caixa de entrada não está vazia
     if (headingInput.trim() !== "") {
       // Cria um novo array espalhando os todos anteriores e adiciona um objeto no final
-      setTodos([...todos, { heading: headingInput, lists: [] }]);
+      setTodos([...todos, { heading: headingInput, list: [] }]);
       // Após adicionar a nova tarefa, redefine o campo e o deixa vazio
       setHeadingInput("");
     }
   };
 
-  const handleDeletetodo = (index) => {
+  const handleDeleteTodo = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
   };
 
-  
+  const handleAddList = (index) => {
+    if (listInputs[index] && listInputs[index].trim() != "") {
+      const newTodos = [...todos];
+      newTodos[index].list.push(listInputs[index]);
+      setTodos(newTodos);
+      setListInputs({ ...listInputs, [index]: "" });
+    }
+  };
+
+  const handleListInputChange = (index, value) => {
+    setListInputs({ ...listInputs, [index]: value });
+  };
 
   return (
     <>
@@ -49,7 +60,7 @@ const TodoList = () => {
       <div className="todo_main">
         {/*Mapeia cada item de tarefa e executa a função de exibir e deletar */}
         {todos.map((todo, index) => (
-          <div key={{ index }} className="todo-card">
+          <div key={ index } className="todo-card">
             <div className="heading_todo">
               {/*Cada Item de tarefa é redenrizado no seu card*/}
               <h3>{todo.heading}</h3>
@@ -62,6 +73,13 @@ const TodoList = () => {
               >
                 Delete Heading
               </button>
+              <ul>
+                {todo.list.map((list, listIndex) => (
+                  <li key={listIndex} className="todo_inside_list">
+                    <p>{list}</p>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="add_list">
               <input
