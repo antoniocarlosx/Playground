@@ -1,26 +1,43 @@
-import React, { useState } from 'react';
-import './TodoList.css';
+import React, { useState } from "react";
+import "./TodoList.css";
 
 const TodoList = () => {
-  
+  const [todos, setTodos] = useState([]);
+  const [headingInput, setHeadingInput] = useState("");
+  const [listInputs, setListInputs] = useState({});
+
+  // Obtém o cabeçalho da caixa de entrada, acionada ao clicar no botão
+  const handleAddTodo = () => {
+    // Verifica se a caixa de entrada não está vazia
+    if (headingInput.trim() !== "") {
+      // Cria um novo array espalhando os todos anteriores e adiciona um objeto no final
+      setTodos([...todos, { heading: headingInput, lists: [] }]);
+      // Após adicionar a nova tarefa, redefine o campo e o deixa vazio
+      setHeadingInput("");
+    }
+  };
 
   return (
     <>
       <div className="todo-container">
-        <h1 className="title">My Todo List</h1>
+        <h1 className="title">Minha Lista de Tarefas</h1>
         <div className="input-container">
           <input
             type="text"
             className="heading-input"
             placeholder="Enter heading"
+            value={headingInput} // Vincula o valor digitado à variável de estado headinInput
             
+            // No instante que o valor de entrada muda usa o valor dela para atualizar a variavel de estado
+            onChange={(e) => {
+              setHeadingInput(e.target.value);
+            }}
           />
-          <button className="add-list-button">Add Heading</button>
+          
+          <button className="add-list-button" onClick={handleAddTodo}>Add Heading</button>
         </div>
       </div>
-      <div className="todo_main">
-        
-      </div>
+      <div className="todo_main"></div>
     </>
   );
 };
