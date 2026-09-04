@@ -17,6 +17,14 @@ const TodoList = () => {
     }
   };
 
+  const handleDeletetodo = (index) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
+
+  
+
   return (
     <>
       <div className="todo-container">
@@ -46,17 +54,31 @@ const TodoList = () => {
               {/*Cada Item de tarefa é redenrizado no seu card*/}
               <h3>{todo.heading}</h3>
               {/*Acompanhado de toda tarefa vem um botão de deletar*/}
-              <button className="delete-button-heading" onClick={() => 
-                {handleDeleteTodo(index)}}>
+              <button
+                className="delete-button-heading"
+                onClick={() => {
+                  handleDeleteTodo(index);
+                }}
+              >
                 Delete Heading
               </button>
             </div>
             <div className="add_list">
-              <input type="text" className="list-input"
-              placeholder="Adicionar Lista"
-              value={listInputs[index] || ''}
-              onChange={(e) => {handleListInputChange(index, e.target.value)}}/>
-              <button className="add-list-button" onClick={() => handleAddList(index)}>Adicionar Lista</button>
+              <input
+                type="text"
+                className="list-input"
+                placeholder="Adicionar Lista"
+                value={listInputs[index] || ""}
+                onChange={(e) => {
+                  handleListInputChange(index, e.target.value);
+                }}
+              />
+              <button
+                className="add-list-button"
+                onClick={() => handleAddList(index)}
+              >
+                Adicionar Lista
+              </button>
             </div>
           </div>
         ))}
