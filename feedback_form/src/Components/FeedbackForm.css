@@ -24,7 +24,18 @@ nav{
     font-size: 16px;
     margin-bottom: 20px;
   }
-  
+  .rating-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+  }
+
+  .rating-container input{
+   padding: 1rem;
+  }
   .feedback-form input[type="text"],
   .feedback-form input[type="email"],
   .feedback-form textarea {
